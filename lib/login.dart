@@ -21,7 +21,7 @@ class _LoginState extends State<Login> {
   TextEditingController PasswordControler = TextEditingController();
 
   Future<void> _login() async {
-    var url = Uri.parse("https://tingbers.site/apitest/login.php");
+    var url = Uri.parse("linkapi");
     var response = await http.post(url, body: {
       "username": UsernameController.text,
       "password": PasswordControler.text
